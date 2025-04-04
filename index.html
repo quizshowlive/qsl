@@ -23,129 +23,25 @@
       top: 0;
       width: 100%;
       background: rgba(0, 0, 0, 0.6);
-      padding: 1rem 2rem;
+      padding: 0.5rem 2rem;
       display: flex;
-      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
       z-index: 999;
     }
 
-    nav a {
+    .logo {
+      height: 50px;
+      filter: drop-shadow(0 0 6px #00ffff);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
       color: #00ffff;
       text-decoration: none;
-      margin: 0 1rem;
       font-weight: bold;
-      font-family: 'Oswald', sans-serif;
-      font-size: 1rem;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #ff00ff;
-    }
-
-    header {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 1rem;
-    }
-
-    h1 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 4rem;
-      color: #00ffff;
-      text-shadow: 0 0 10px #00ffff;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.25rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .button {
-      margin-top: 2rem;
-      padding: 1rem 2rem;
-      background-color: #00ffff;
-      color: #111;
-      border: none;
-      border-radius: 10px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 0 20px #00ffff;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #00bcd4;
-      box-shadow: 0 0 30px #00bcd4;
-    }
-
-    section {
-      padding: 6rem 2rem 4rem;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 12px;
-      margin-bottom: 3rem;
-    }
-
-    section h2 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 2.5rem;
-      color: #00ffff;
-      margin-bottom: 1rem;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      nav a {
-        margin: 0 0.5rem;
-        font-size: 0.9rem;
-      }
-
-      .button {
-        font-size: 1rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#how">How It Works</a>
-    <a href="#booking">Booking</a>
-  </nav>
-
-  <header>
-    <h1>Quiz Show Live</h1>
-    <p>Step into the grid. The ultimate live game show experience is here. Created by veteran TV producers for unforgettable events.</p>
-    <a href="#about"><button class="button">Let's Play!</button></a>
-  </header>
-
-  <section id="about">
-    <h2>About the Show</h2>
-    <p>Quiz Show Live is a high-energy, interactive experience designed for conferences, corporate events, festivals, and more. It combines fast-paced trivia, hilarious games, and audience participation for a show they'll never forget.</p>
-  </section>
-
-  <section id="how">
-    <h2>How It Works</h2>
-    <p>We bring the full game show setup to you — with lights, sound, graphics, and professional hosts. It’s customizable, scalable, and completely turnkey. Your guests become the stars of the show!</p>
-  </section>
-
-  <section id="booking">
-    <h2>Booking Info</h2>
-    <p>Want to bring Quiz Show Live to your next event? Reach out for rates, availability, and customization options. We’ll tailor the experience to your crowd and make it unforgettable.</p>
-  </section>
-</body>
-</html>
-
+      font-family: '
